@@ -41,7 +41,7 @@ const Hero = () => {
                             View Projects
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
-                        <a href="../src/assets/raviresume.pdf" className="btn-outline cursor-pointer flex items-center gap-2">
+                        <a href="src\assets\raviresume.pdf" className="btn-outline cursor-pointer flex items-center gap-2">
                             Download CV
                             <Download className="w-5 h-5" />
                         </a>
@@ -55,7 +55,7 @@ const Hero = () => {
                     className="relative"
                 >
                     <img
-                        src="../src/assets/ravi.png"
+                        src="src\assets\ravi.png"
                         alt="Ravi Kumar"
                         className="w-full max-w-md mx-auto rounded-3xl shadow-2xl border border-white/10 relative z-10 bg-card"
                     />
