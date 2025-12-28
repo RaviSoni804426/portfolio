@@ -13,12 +13,24 @@ const Contact = () => {
         setLoading(true);
         setStatus({ type: '', message: '' });
 
-        // REPLACE THESE WITH YOUR ACTUAL EMAILJS SERVICE ID, TEMPLATE ID, AND PUBLIC KEY
-        // You can get them from https://dashboard.emailjs.com/
-        emailjs.sendForm(
+        // Initialize EmailJS with Public Key
+        emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+
+        const templateParams = {
+            from_name: formRef.current.from_name.value,
+            from_email: formRef.current.from_email.value,
+            message: formRef.current.message.value,
+            to_name: 'Ravi Kumar',
+            to_email: 'kumarsoniravi705@gmail.com', // Explicit recipient to solve "recipients address is empty"
+            reply_to: formRef.current.from_email.value, // Allows direct reply to sender
+        };
+
+        console.log('Sending Email with Params:', templateParams);
+
+        emailjs.send(
             import.meta.env.VITE_EMAILJS_SERVICE_ID,
             import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-            formRef.current,
+            templateParams,
             import.meta.env.VITE_EMAILJS_PUBLIC_KEY
         )
             .then(() => {
@@ -26,11 +38,12 @@ const Contact = () => {
                 setStatus({ type: 'success', message: 'Message sent successfully! I will get back to you soon.' });
                 formRef.current.reset();
                 setTimeout(() => setStatus({ type: '', message: '' }), 5000);
-            }, (error) => {
+            })
+            .catch((error) => {
                 setLoading(false);
                 const errorMessage = error.text || error.message || 'Something went wrong';
                 setStatus({ type: 'error', message: `Error: ${errorMessage}. Please check console or try again.` });
-                console.error('EmailJS Error:', error);
+                console.error('EmailJS Full Error Object:', error);
             });
     };
 
