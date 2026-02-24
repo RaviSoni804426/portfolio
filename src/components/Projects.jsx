@@ -75,14 +75,14 @@ const projects = [
     category: "Data Analysis",
     color: "from-emerald-500 to-green-500"
 },
-{
-    title: "YouTube Analysis",
-    subtitle: "Content Performance Analytics",
-    desc: "Analyzed YouTube channel data to identify engagement patterns, growth metrics, and content optimization strategies.",
-    stack: ["Python", "SQL", "Visualization", "Analytics"],
-    category: "Data Analysis",
-    color: "from-rose-500 to-pink-500"
-}
+// {
+//     title: "YouTube Analysis",
+//     subtitle: "Content Performance Analytics",
+//     desc: "Analyzed YouTube channel data to identify engagement patterns, growth metrics, and content optimization strategies.",
+//     stack: ["Python", "SQL", "Visualization", "Analytics"],
+//     category: "Data Analysis",
+//     color: "from-rose-500 to-pink-500"
+// }
 ];
 
 const Projects = () => {
@@ -124,7 +124,7 @@ const Projects = () => {
                                 <div className="flex items-center gap-4 mt-auto">
   {/* View Code */}
   <a
-    href="https://github.com/ravisoni804426"   // 👉 your GitHub
+    href="https://github.com/RaviSoni804426/Projects/tree/main/projects"   // 👉 your GitHub
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center gap-2 text-sm font-bold text-white hover:text-primary transition-colors"
