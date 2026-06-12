@@ -19,12 +19,12 @@ const skillCategories = [
         skills: ["Neural Networks", "RNN", "LSTM", "Time Series", "PyTorch", "TensorFlow/Keras", "Transformers"]
     },
     {
-        title: "Computer Vision",
+        title: "Automation & Scripting",
         icon: <Eye className="w-6 h-6 text-cyan-400" />,
-        skills: ["Object Detection", "Person Counting", "Video Analytics", "OpenCV"]
+        skills: ["Web Scraping", "Selenium", "BeautifulSoup", "API Integration", "Google Sheets API", "Telegram Bot API"]
     },
     {
-        title: "Data Analysis",
+        title: "Data Analysis & Business Intelligence",
         icon: <Database className="w-6 h-6 text-green-400" />,
         skills: ["Pandas", "NumPy", "EDA", "Looker Studio", "Power BI", "Matplotlib", "Window Functions"]
     },

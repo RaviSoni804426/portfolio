@@ -1,122 +1,66 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
 {
-    title: "PWIOI Admission & Sales Dashboards",
-    subtitle: "Leadership BI Dashboards",
-    desc: "Built and maintained Looker Studio dashboards for admissions, sales funnels, walk-ins, LY/CY comparison, and city-wise tracking used by the PWIOI product and leadership teams.",
-    stack: ["Looker Studio", "SQL", "Google Sheets", "Funnel Analysis"],
+    title: "AI Candidate-Evaluation-Pipeline",
+    subtitle: "AI-Powered Candidate Screening",
+    desc: "Automated candidate screening with PDF/DOCX parsing, LLM-backed summaries, transparent heuristic scoring, RAG retrieval, and a React dashboard.",
+    stack: ["RAG", "Python", "AI Agents", "FAISS", "FastAPI", "Streamlit"],
+    category: "AI Engineering",
+    color: "from-purple-500 to-indigo-500",
+    github: "https://github.com/RaviSoni804426/Candidate-Evalution-Pipeline-",
+    demo:"https://huggingface.co/spaces/RaviSonii/Candidate_Evaluation_Pipeline"
+},
+{
+    title: "Admission Samadhan & Sales Funnel Dashboard",
+    subtitle: "PWIOI 2026 BI Dashboard",
+    desc: "Built a high-impact dashboard for PhysicsWallah PWIOI to track the 2026 registration funnel and admission samadhan with city-wise and funnel-stage filters.",
+    stack: ["Looker Studio", "Google Sheets", "Python", "SQL", "Data Visualization"],
     category: "Business Intelligence",
     color: "from-blue-500 to-cyan-500",
-    demo: "https://datastudio.google.com/reporting/98d718ae-8282-4013-be53-828fd9e968e5"
+    demo: "https://datastudio.google.com/reporting/eeb67d58-98f8-4eb0-afbc-11bcb7d2d343"
 },
 {
-    title: "Mettle Video Downloader",
-    subtitle: "Streamlit Automation Tool",
-    desc: "Developed a production Streamlit app to extract, download, and organize candidate assessment videos from Mettle PDFs, improving hiring workflow efficiency for the PWIOI team.",
-    stack: ["Python", "Streamlit", "PDF Parsing", "Automation"],
-    category: "Automation",
-    color: "from-green-500 to-emerald-500",
-    demo: "https://mettleautomation.streamlit.app/"
+    title: "Aegis Market - Financial Market Simulator",
+    subtitle: "Autonomous Financial Agent Stress-Testing",
+    desc: "Simulated micro-economic stress scenarios such as inflation and liquidity shocks on a synthetic market, modeling agent behavior and price dynamics.",
+    stack: ["Python", "Flask", "AI Agents", "Pandas", "NumPy", "SQL", "MLOps"],
+    category: "Financial AI",
+    color: "from-emerald-500 to-green-500",
+    github: "https://github.com/RaviSoni804426/Stock-Market-Analysis",
+    demo: "https://huggingface.co/spaces/RaviSonii/Stock_Market_Analysis"
 },
 {
-    title: "PWIOI Telegram Bot",
-    subtitle: "Marketing & Community Automation",
-    desc: "Designed a Telegram bot for PWIOI channel promotions, automated notifications, link sharing, user engagement, and lead support for the admissions pipeline.",
-    stack: ["Python", "Telegram Bot API", "Automation", "Marketing Ops"],
-    category: "AI Product Engineering",
-    color: "from-indigo-500 to-purple-500"
-},
-{
-    title: "Student Data Mapping Automation",
-    subtitle: "Sheets & Python Workflow Automation",
-    desc: "Created Python and Google Sheets automations for 10th, 12th, competitive score mapping, BTL/Mitra tracking, scholarship checks, ERP sync, and daily report workflows.",
-    stack: ["Python", "Google Sheets", "Data Cleaning", "XLOOKUP"],
-    category: "Data Engineering",
-    color: "from-yellow-500 to-orange-500"
-},
-   {
-    title: "AI Resume Screener",
-    subtitle: "Automated Resume Screening System",
-    desc: "Built an AI-powered system to screen and rank resumes based on job descriptions using NLP and semantic similarity techniques.",
-    stack: ["Python", "NLP", "Machine Learning", "Scikit-learn"],
-    category: "Artificial Intelligence",
-    color: "from-purple-500 to-indigo-500"
-},
-{
-    title: "End to End Chatbot",
-    subtitle: "Full Stack Conversational AI",
-    desc: "Developed a complete chatbot solution with backend APIs, LLM integration, and deployment pipeline.",
-    stack: ["LLMs", "FastAPI", "React", "Deployment"],
-    category: "Generative AI",
-    color: "from-blue-500 to-cyan-500"
-},
-{
-    title: "GenAI Model from Scratch",
-    subtitle: "Custom Generative AI Implementation",
-    desc: "Implemented a foundational Generative AI model from scratch covering embeddings, attention, and transformer concepts.",
-    stack: ["Transformers", "Deep Learning", "PyTorch", "LLMs"],
-    category: "Deep Learning",
-    color: "from-pink-500 to-rose-500"
-},
-{
-    title: "Mutual Fund Analysis",
-    subtitle: "Financial Data Analysis Project",
-    desc: "Analyzed mutual fund datasets to evaluate fund performance, risk metrics, and return trends using statistical techniques.",
-    stack: ["Python", "Pandas", "EDA", "Visualization"],
-    category: "Data Analysis",
-    color: "from-green-500 to-emerald-500"
-},
-{
-    title: "RAG From Scratch",
+    title: "RAG-Based Knowledge Retrieval System",
     subtitle: "Retrieval-Augmented Generation System",
-    desc: "Built a Retrieval-Augmented Generation pipeline using embeddings, vector databases, and LLM integration.",
-    stack: ["RAG", "FAISS", "LLMs", "Vector DB"],
+    desc: "Built a first RAG system from scratch using open-source LLM tooling, sentence-transformer embeddings, FAISS vector search, and LangChain text splitting.",
+    stack: ["RAG", "Python", "Transformers", "FAISS", "LangChain"],
     category: "Generative AI",
-    color: "from-indigo-500 to-purple-500"
+    color: "from-indigo-500 to-purple-500",
+    github: "https://github.com/RaviSoni804426/Projects/tree/main/projects/RAG%20From%20Scratch"
 },
 {
-    title: "Real Estate Price Prediction",
-    subtitle: "Regression Based ML Model",
-    desc: "Developed a machine learning regression model to predict real estate prices based on location and property features.",
-    stack: ["Machine Learning", "Regression", "Feature Engineering"],
-    category: "Machine Learning",
-    color: "from-yellow-500 to-orange-500"
-},
-{
-    title: "Stock Price Prediction",
-    subtitle: "Time Series Forecasting",
-    desc: "Built a predictive model using time series analysis and LSTM networks to forecast stock price movements.",
-    stack: ["LSTM", "Time Series", "Deep Learning", "Finance"],
-    category: "Deep Learning",
-    color: "from-red-500 to-orange-500"
-},
-{
-    title: "Voice AI Assistant",
-    subtitle: "Speech-Based Intelligent Assistant",
-    desc: "Created a voice-enabled AI assistant with speech recognition, NLP processing, and text-to-speech response system.",
-    stack: ["Speech Recognition", "NLP", "Python", "APIs"],
-    category: "Artificial Intelligence",
-    color: "from-cyan-500 to-blue-500"
+    title: "SpaceIQ AI Revenue Intelligence",
+    subtitle: "AI-Powered Revenue Platform",
+    desc: "Developed an AI-driven revenue intelligence platform to analyze sales pipelines, accurately forecast revenue, and provide actionable insights for business growth.",
+    stack: ["Python", "AIOps", "AI Agents", "Product Development", "LLMs", "SQL"],
+    category: "Revenue Intelligence",
+    color: "from-orange-500 to-yellow-500",
+    github: "https://github.com/RaviSoni804426/SPACEIQ-FULL-PROJECT",
+     demo: "https://huggingface.co/spaces/RaviSonii/SpaceIQ"
+    
 },
 {
     title: "Walmart Sales Data Analysis",
-    subtitle: "SQL EDA Project",
-    desc: "Performed SQL-based exploratory data analysis on Walmart sales data to uncover revenue trends and business insights.",
-    stack: ["SQL", "Data Cleaning", "EDA", "Business Insights"],
+    subtitle: "SQL and Data Visualization Project",
+    desc: "Used SQL and data visualization techniques to clean, process, and analyze complex Walmart sales datasets, identifying key business patterns for strategic decision-making.",
+    stack: ["Python", "SQL", "Power BI", "Tableau", "Data Cleaning"],
     category: "Data Analysis",
-    color: "from-emerald-500 to-green-500"
-},
-// {
-//     title: "YouTube Analysis",
-//     subtitle: "Content Performance Analytics",
-//     desc: "Analyzed YouTube channel data to identify engagement patterns, growth metrics, and content optimization strategies.",
-//     stack: ["Python", "SQL", "Visualization", "Analytics"],
-//     category: "Data Analysis",
-//     color: "from-rose-500 to-pink-500"
-// }
+    color: "from-rose-500 to-pink-500",
+    github: "https://github.com/RaviSoni804426/Projects/tree/main/projects/Walmart-Sales-Data-Analysis--SQL-Project"
+}
 ];
 
 const Projects = () => {
@@ -156,25 +100,27 @@ const Projects = () => {
                                 </div>
 
                                 <div className="flex items-center gap-4 mt-auto">
-  {/* View Code */}
-  <a
-    href="https://github.com/RaviSoni804426/Projects/tree/main/projects"   // 👉 your GitHub
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-sm font-bold text-white hover:text-primary transition-colors"
-  >
-    View Code <Github className="w-4 h-4" />
-  </a>
+  {project.github && (
+    <a
+      href={project.github}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-sm font-bold text-white hover:text-primary transition-colors"
+    >
+      View Code <Github className="w-4 h-4" />
+    </a>
+  )}
 
-  {/* Live Demo */}
-  <a
-    href={project.demo || "https://ravisoni.vercel.app/"}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-sm font-bold text-white hover:text-primary transition-colors"
-  >
-    Live Demo <ExternalLink className="w-4 h-4" />
-  </a>
+  {project.demo && (
+    <a
+      href={project.demo}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-center gap-2 text-sm font-bold text-white hover:text-primary transition-colors"
+    >
+      Live Demo <ExternalLink className="w-4 h-4" />
+    </a>
+  )}
 </div>
 
                             </div>
