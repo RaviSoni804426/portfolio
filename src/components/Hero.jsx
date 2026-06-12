@@ -25,23 +25,23 @@ const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
             </span>
-            Available for Freelance Projects
+            Product Engineer Intern @ PhysicsWallah
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-            Data Scientist & <br />
+            AI Product Engineer & <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-              ML Engineer
+              Automation Specialist
             </span>
           </h1>
 
           <p className="text-gray-400 text-lg md:text-xl mb-8 max-w-lg leading-relaxed">
-            I build intelligent AI systems that solve real-world problems.
-            Specializing in <span className="text-white">Data Science ,</span>{" "}
-            <span className="text-white">Machine Learning ,</span>
-            <span className="text-white">Deep Learning ,</span>{" "}
-            <span className="text-white">Computer Vision ,</span> and{" "}
-            <span className="text-white">Predictive Analytics</span>.
+            I build production-focused AI, automation, and business intelligence systems.
+            Specializing in <span className="text-white">Python Automation,</span>{" "}
+            <span className="text-white">Looker Studio Dashboards,</span>{" "}
+            <span className="text-white">LLM Systems,</span>{" "}
+            <span className="text-white">Data Science,</span> and{" "}
+            <span className="text-white">EdTech Product Operations</span>.
           </p>
 
           <div className="flex flex-wrap gap-4">
@@ -86,8 +86,8 @@ const Hero = () => {
                 98%
               </div>
               <div>
-                <p className="text-gray-400 text-xs">Model Accuracy</p>
-                <p className="font-bold text-white">Achieved</p>
+                <p className="text-gray-400 text-xs">PWIOI Dashboards</p>
+                <p className="font-bold text-white">Delivered</p>
               </div>
             </div>
           </motion.div>

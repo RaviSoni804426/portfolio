@@ -19,19 +19,19 @@ const About = () => {
                         viewport={{ once: true }}
                     >
                         <h3 className="text-2xl font-bold mb-6 text-white">
-                            Solving Complex Problems with <span className="text-primary">Data & AI</span>
+                            Building Scalable Systems with <span className="text-primary">Data, AI & Automation</span>
                         </h3>
                         <p className="text-gray-400 leading-relaxed mb-6">
-                            I am a Data Scientist and Machine Learning Engineer passionate about transforming raw data into actionable business insights. My expertise lies in building scalable ML models, optimizing deep learning algorithms, and deploying AI solutions that drive real-world impact.
+                            I am a Data Science and AI undergraduate at IIT Guwahati, currently working as a Product Engineer Intern with the PWIOI team at PhysicsWallah. I focus on converting raw operational data into decision-ready dashboards, automation workflows, and AI-enabled tools.
                         </p>
                         <p className="text-gray-400 leading-relaxed mb-8">
-                            With a strong freelancing mindset, I focus on delivering clean, efficient, and production-ready code. Whether it&apos;s Computer Vision for surveillance or Predictive Analytics for traffic congestion, I turn abstract challenges into concrete technical solutions.
+                            At PW, I built Looker Studio admission and sales dashboards, Python and Google Sheets automations, a Streamlit-based Mettle video extraction tool, Telegram marketing automation, and BRDs for product modules. I like solving unstructured problems where data, product thinking, and clean engineering meet.
                         </p>
 
                         <div className="grid grid-cols-2 gap-6">
                             <div className="p-4 bg-card rounded-xl border border-white/5">
-                                <h4 className="text-3xl font-bold text-white mb-1">10+</h4>
-                                <p className="text-gray-400 text-sm">Projects Completed</p>
+                                <h4 className="text-3xl font-bold text-white mb-1">15+</h4>
+                                <p className="text-gray-400 text-sm">Dashboards Delivered</p>
                             </div>
                             <div className="p-4 bg-card rounded-xl border border-white/5">
                                 <h4 className="text-3xl font-bold text-white mb-1">01+</h4>
@@ -48,9 +48,9 @@ const About = () => {
                         className="grid grid-cols-1 gap-4"
                     >
                         {[
-                            { icon: <Terminal className="text-blue-400" />, title: "Machine Learning", desc: "Regression, Classification, Clustering, Feature Engineering, Model Evaluation, Hyperparameter Tuning" },
-                            { icon: <Cpu className="text-purple-400" />, title: "Deep Learning", desc: "Neural Networks, CNNs, RNNs, LSTMs, TensorFlow, PyTorch, Model Optimization" },
-                            { icon: <Database className="text-green-400" />, title: "Data Science", desc: "SQL, Data Analysis, ETL Pipelines, Data Cleaning, Model Training, Model Deployment, Data Visualization" }
+                            { icon: <Terminal className="text-blue-400" />, title: "AI & Automation", desc: "Python scripts, Streamlit tools, Telegram bots, Google Sheets automation, workflow optimization" },
+                            { icon: <Cpu className="text-purple-400" />, title: "Machine Learning & LLMs", desc: "Regression, Classification, Clustering, RAG, FAISS, Transformers, PyTorch, FastAPI" },
+                            { icon: <Database className="text-green-400" />, title: "Business Intelligence", desc: "Looker Studio dashboards, SQL analysis, funnel tracking, data cleaning, executive reporting" }
                         ].map((item, index) => (
                             <div key={index} className="flex gap-4 p-6 glass-card hover:bg-white/5 transition-colors">
                                 <div className="mt-1 p-3 bg-darker rounded-lg h-fit">

@@ -19,15 +19,15 @@ const Freelance = () => {
                                 Available for <br /><span className="text-primary">Freelance Projects</span>
                             </h2>
                             <p className="text-lg text-gray-300 mb-8">
-                                Need a custom AI solution, a data analysis dashboard, or a predictive model?
-                                I help startups and businesses turn data into a competitive advantage.
+                                Need an AI automation workflow, business dashboard, chatbot, or data product?
+                                I help teams turn messy operational processes into scalable systems.
                             </p>
 
                             <div className="space-y-4 mb-8">
                                 {[
-                                    { icon: <Zap className="text-yellow-400" />, text: "Fast & Efficient Delivery" },
-                                    { icon: <Shield className="text-green-400" />, text: "Production-Ready Clean Code" },
-                                    { icon: <Clock className="text-blue-400" />, text: "Timely Communication" }
+                                    { icon: <Zap className="text-yellow-400" />, text: "Automation-First Problem Solving" },
+                                    { icon: <Shield className="text-green-400" />, text: "Clean, Production-Ready Code" },
+                                    { icon: <Clock className="text-blue-400" />, text: "Business-Focused Reporting" }
                                 ].map((item, index) => (
                                     <div key={index} className="flex items-center gap-4">
                                         <div className="p-2 bg-darker rounded-lg border border-white/5">
@@ -53,11 +53,11 @@ const Freelance = () => {
                             <div className="glass-card p-6">
                                 <h3 className="text-lg font-bold text-white mb-2">Services Accepted</h3>
                                 <ul className="space-y-2 text-gray-400 text-sm">
-                                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> AI Model Development</li>
-                                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> Machine Learning & Data Science</li>
+                                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> AI & LLM Product Development</li>
+                                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> Python Workflow Automation</li>
+                                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> Looker Studio BI Dashboards</li>
+                                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> Telegram Bots & Internal Tools</li>
                                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> Data Analysis & Visualization</li>
-                                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> Computer Vision Systems</li>
-                                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-primary" /> Web Scraping & Automation</li>
                                 </ul>
                             </div>
                         </motion.div>

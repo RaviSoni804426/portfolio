@@ -3,6 +3,40 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Github, ArrowUpRight } from 'lucide-react';
 
 const projects = [
+{
+    title: "PWIOI Admission & Sales Dashboards",
+    subtitle: "Leadership BI Dashboards",
+    desc: "Built and maintained Looker Studio dashboards for admissions, sales funnels, walk-ins, LY/CY comparison, and city-wise tracking used by the PWIOI product and leadership teams.",
+    stack: ["Looker Studio", "SQL", "Google Sheets", "Funnel Analysis"],
+    category: "Business Intelligence",
+    color: "from-blue-500 to-cyan-500",
+    demo: "https://datastudio.google.com/reporting/98d718ae-8282-4013-be53-828fd9e968e5"
+},
+{
+    title: "Mettle Video Downloader",
+    subtitle: "Streamlit Automation Tool",
+    desc: "Developed a production Streamlit app to extract, download, and organize candidate assessment videos from Mettle PDFs, improving hiring workflow efficiency for the PWIOI team.",
+    stack: ["Python", "Streamlit", "PDF Parsing", "Automation"],
+    category: "Automation",
+    color: "from-green-500 to-emerald-500",
+    demo: "https://mettleautomation.streamlit.app/"
+},
+{
+    title: "PWIOI Telegram Bot",
+    subtitle: "Marketing & Community Automation",
+    desc: "Designed a Telegram bot for PWIOI channel promotions, automated notifications, link sharing, user engagement, and lead support for the admissions pipeline.",
+    stack: ["Python", "Telegram Bot API", "Automation", "Marketing Ops"],
+    category: "AI Product Engineering",
+    color: "from-indigo-500 to-purple-500"
+},
+{
+    title: "Student Data Mapping Automation",
+    subtitle: "Sheets & Python Workflow Automation",
+    desc: "Created Python and Google Sheets automations for 10th, 12th, competitive score mapping, BTL/Mitra tracking, scholarship checks, ERP sync, and daily report workflows.",
+    stack: ["Python", "Google Sheets", "Data Cleaning", "XLOOKUP"],
+    category: "Data Engineering",
+    color: "from-yellow-500 to-orange-500"
+},
    {
     title: "AI Resume Screener",
     subtitle: "Automated Resume Screening System",
@@ -134,7 +168,7 @@ const Projects = () => {
 
   {/* Live Demo */}
   <a
-    href=" "
+    href={project.demo || "https://ravisoni.vercel.app/"}
     target="_blank"
     rel="noopener noreferrer"
     className="flex items-center gap-2 text-sm font-bold text-white hover:text-primary transition-colors"

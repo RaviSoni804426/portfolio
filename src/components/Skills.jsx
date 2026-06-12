@@ -6,17 +6,17 @@ const skillCategories = [
     {
         title: "Programming & Tools",
         icon: <Code className="w-6 h-6 text-blue-400" />,
-        skills: ["Python", "SQL", "C++", "Git", "GitHub", "VS Code", "Jupyter"]
+        skills: ["Python", "SQL", "C++", "Git", "GitHub", "VS Code", "Jupyter", "Docker"]
     },
     {
         title: "Machine Learning",
         icon: <Brain className="w-6 h-6 text-purple-400" />,
-        skills: ["Regression", "Classification", "Clustering", "Model Evaluation", "Scikit-Learn"]
+        skills: ["Regression", "Classification", "Clustering", "Model Evaluation", "Scikit-Learn", "Feature Engineering"]
     },
     {
         title: "Deep Learning",
         icon: <Activity className="w-6 h-6 text-pink-400" />,
-        skills: ["Neural Networks", "RNN", "LSTM", "Time Series", "TensorFlow/Keras"]
+        skills: ["Neural Networks", "RNN", "LSTM", "Time Series", "PyTorch", "TensorFlow/Keras", "Transformers"]
     },
     {
         title: "Computer Vision",
@@ -26,12 +26,12 @@ const skillCategories = [
     {
         title: "Data Analysis",
         icon: <Database className="w-6 h-6 text-green-400" />,
-        skills: ["Pandas", "NumPy", "EDA", "Feature Engineering", "Power BI", "Matplotlib"]
+        skills: ["Pandas", "NumPy", "EDA", "Looker Studio", "Power BI", "Matplotlib", "Window Functions"]
     },
     {
-        title: "Web for ML",
+        title: "AI Product Engineering",
         icon: <Globe className="w-6 h-6 text-orange-400" />,
-        skills: ["HTML", "CSS", "JavaScript", "FastAPI", "Streamlit", "React"]
+        skills: ["FastAPI", "Streamlit", "React", "Telegram Bot API", "Google Sheets Automation", "BRD Writing"]
     }
 ];
 
