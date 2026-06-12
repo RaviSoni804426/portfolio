@@ -22,7 +22,7 @@ const About = () => {
                             Building Scalable Systems with <span className="text-primary">Data, AI & Automation</span>
                         </h3>
                         <p className="text-gray-400 leading-relaxed mb-6">
-                            I am a Data Science and AI undergraduate at IIT Guwahati, currently working as a Product Engineer Intern with the PWIOI team at PhysicsWallah. I focus on converting raw operational data into decision-ready dashboards, automation workflows, and AI-enabled tools.
+                            I am a Data Science and AI undergraduate at IIT Guwahati, currently working as an Ai product Intern with the PWIOI team at PhysicsWallah. I focus on converting raw operational data into decision-ready dashboards, automation workflows, and AI-enabled tools.
                         </p>
                         <p className="text-gray-400 leading-relaxed mb-8">
                             At PW, I built Looker Studio admission and sales dashboards, Python and Google Sheets automations, a Streamlit-based Mettle video extraction tool, Telegram marketing automation, and BRDs for product modules. I like solving unstructured problems where data, product thinking, and clean engineering meet.
