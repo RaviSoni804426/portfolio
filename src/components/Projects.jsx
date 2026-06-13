@@ -4,6 +4,16 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
 {
+    title: "PW Internship — AI Product Engineering",
+    subtitle: "Full Internship Report | PhysicsWallah PWIOI",
+    desc: "Comprehensive report of my AI Product Engineering internship at PhysicsWallah (PWIOI team). Covers 15+ Looker Studio dashboards, Python automations, Mettle video downloader, Telegram bot, GCMS website management, and BRD documentation.",
+    stack: ["Looker Studio", "Python", "Streamlit", "Telegram Bot API", "Google Sheets", "BRD", "SQL"],
+    category: "Internship Report",
+    color: "from-sky-500 to-blue-600",
+    demo: "/ravi-pw-internship-report.pdf",
+    isReport: true
+},
+{
     title: "AI Candidate-Evaluation-Pipeline",
     subtitle: "AI-Powered Candidate Screening",
     desc: "Automated candidate screening with PDF/DOCX parsing, LLM-backed summaries, transparent heuristic scoring, RAG retrieval, and a React dashboard.",
@@ -111,7 +121,7 @@ const Projects = () => {
     </a>
   )}
 
-  {project.demo && (
+  {project.demo && !project.isReport && (
     <a
       href={project.demo}
       target="_blank"
@@ -119,6 +129,16 @@ const Projects = () => {
       className="flex items-center gap-2 text-sm font-bold text-white hover:text-primary transition-colors"
     >
       Live Demo <ExternalLink className="w-4 h-4" />
+    </a>
+  )}
+
+  {project.isReport && project.demo && (
+    <a
+      href={project.demo}
+      download="Ravi-Kumar-PW-Internship-Report.pdf"
+      className="flex items-center gap-2 text-sm font-bold text-white hover:text-primary transition-colors"
+    >
+      Download Report <ExternalLink className="w-4 h-4" />
     </a>
   )}
 </div>

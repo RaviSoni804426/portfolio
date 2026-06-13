@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Database, Cpu } from 'lucide-react';
+import { Terminal, Database, Cpu, FileText } from 'lucide-react';
 
 const About = () => {
     return (
@@ -28,7 +28,7 @@ const About = () => {
                             At PW, I built Looker Studio admission and sales dashboards, Python and Google Sheets automations, a Streamlit-based Mettle video extraction tool, Telegram marketing automation, and BRDs for product modules. I like solving unstructured problems where data, product thinking, and clean engineering meet.
                         </p>
 
-                        <div className="grid grid-cols-2 gap-6">
+                        <div className="grid grid-cols-2 gap-6 mb-8">
                             <div className="p-4 bg-card rounded-xl border border-white/5">
                                 <h4 className="text-3xl font-bold text-white mb-1">15+</h4>
                                 <p className="text-gray-400 text-sm">Dashboards Delivered</p>
@@ -38,6 +38,16 @@ const About = () => {
                                 <p className="text-gray-400 text-sm">Years Experience</p>
                             </div>
                         </div>
+
+                        <a
+                            href="/ravi-pw-internship-report.pdf"
+                            download="Ravi-Kumar-PW-Internship-Report.pdf"
+                            className="inline-flex items-center gap-2 px-5 py-3 bg-card border border-white/10 rounded-xl text-sm font-semibold text-white hover:border-primary hover:text-primary transition-colors group"
+                        >
+                            <FileText className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                            Download Internship Report
+                            <span className="text-xs text-gray-500 font-normal">— PhysicsWallah, PWIOI</span>
+                        </a>
                     </motion.div>
 
                     <motion.div
