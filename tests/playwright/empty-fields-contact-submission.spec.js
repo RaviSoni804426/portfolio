@@ -1,0 +1,1 @@
+Update the page.goto line to use a valid absolute URL or set the base URL for the page using the page.goto method with the { waitUntil: 'load' } option, for example: await page.goto('https://example.com/contact', { waitUntil: 'load' });
