@@ -1,0 +1,1 @@
+Update the page.goto('/') call to use a valid URL, such as page.goto('https://example.com/'), or ensure the base URL is properly configured in the test environment. For example: const baseUrl = 'https://example.com'; await page.goto(baseUrl);
