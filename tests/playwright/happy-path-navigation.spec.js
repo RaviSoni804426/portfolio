@@ -1,0 +1,1 @@
+Update the page.goto line to include a valid base URL, for example: await page.goto('https://example.com/'); or configure the base URL in the playwright.config file.
