@@ -1,1 +1,1 @@
-Update the line 'await page.goto('/contact');' to 'await page.goto('https://example.com/contact');' or the correct URL for the contact page, ensuring that the URL is valid and exists.
+Update the page.goto line to use an absolute URL or a properly resolved relative URL, for example: await page.goto('https://example.com/contact'); or ensure the base URL is set in the playwright config, then use await page.goto('/contact');
