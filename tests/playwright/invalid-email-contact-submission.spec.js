@@ -1,1 +1,1 @@
-Update the line 'await page.goto('/contact');' to 'await page.goto('https://example.com/contact');' or the correct URL for the contact page, ensuring that the URL is valid and exists.
+Update the page.goto line to use a valid absolute URL, for example: await page.goto('https://example.com/contact'); or specify the base URL using the 'baseURL' option when launching the browser, for example: const browser = await playwright.chromium.launch({ baseURL: 'https://example.com' });
