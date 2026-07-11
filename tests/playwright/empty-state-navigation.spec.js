@@ -1,0 +1,1 @@
+await page.goto('/'); await page.click('text="About"'); await expect(page).toHaveURL('/about'); await page.reload(); await expect(page).not.toHaveContent('About'); // Alternatively, consider using a more robust method to clear page content or verify the absence of content without modifying the page's DOM
